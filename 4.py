@@ -16,7 +16,7 @@
 # print(type(b))
 
 # 슬라이싱
-# [0:n] -> n-1 위치
+# # [0:n] -> n-1 위치
 # seasons = ["봄","여름","가을","겨울"]
 # print(seasons[0:1])
 # print(seasons[0:2])
@@ -26,11 +26,15 @@
 # print(seasons[1:3])
 # print(seasons[::2])
 # print(seasons[::3])
-# # print(seasons[::-1])
+# print(seasons[::-1])
 
-# # seasons2 = ["봄","여름","가을","겨울",[1,2,3,4]]
-# # print(seasons2[-1][0])
-# # print(seasons2[-1])
+# seasons2 = ["봄","여름","가을","겨울",[1,2,3,4]]
+# print(seasons2[-1][0])
+# print(seasons2[-1])
+# shop = ["반팔","청바지","이어폰","키보드"]
+# shop[0] = "무지 반팔"
+# del shop[2:4]
+# print(shop)
 # abcd = "abcd"
 # ['a','b','c','d']
 # print(len(abcd))
@@ -47,17 +51,17 @@
 # c=["1","10","2"]
 # c.sort()
 # print(c)
-# d = ["강남","강북","서","게임","서","서"]
-# first = d.index("서")+1
-# print(d.index("서"))
-# print(first + d[first:].index("서"))
-# print(d.count("서"))
-rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple']
-print(rainbow[2])
-rainbow.sort()
-print(rainbow)
-skyblue ="skyblue"
-rainbow.append(skyblue)
-print(rainbow)
-del rainbow[3:7]
-print(rainbow)
+d = ["강남","강북","서","게임","서","서"]
+first = d.index("서")+1
+print(d.index("서"))
+print(first + d[first:].index("서"))
+print(d.count("서"))
+# rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple']
+# print(rainbow[2])
+# rainbow.sort()
+# print(rainbow)
+# skyblue ="skyblue"
+# rainbow.append(skyblue)
+# print(rainbow)
+# del rainbow[3:7]
+# print(rainbow)
