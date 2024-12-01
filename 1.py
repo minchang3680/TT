@@ -4,7 +4,7 @@
 # print()
 # print(1)
 # print("안녕하세요", end="")
-# print("  코딩온입니다."}
+# print("  코딩온입니다.")
 # im = ("야구")
 # im = ("축구")
 # print(im)
@@ -12,6 +12,9 @@
 # ive = "장원영"
 # Ive = "카리나"
 # print(ive, Ive)
+# name = '홍길동'
+# age = 30
+# print(f"나의 이름은 {name}입니다. 나이는 {age}입니다.")
 
 # print(f"나는 {ive}입니다")
 # print("나는",ive,"입니다")
@@ -32,4 +35,5 @@
 # print(ord('a'))
 # print(chr(48))
 # print(chr(65))
-name = input()
+# name = input()
+# print('what\'your name')
