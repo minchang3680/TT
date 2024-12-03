@@ -33,16 +33,16 @@
 # print(total_1)
 # print(total_2)
 
-# # 실습2 입력한 숫자만큼 카운트 하고 "발사"출력
+# 실습2 입력한 숫자만큼 카운트 하고 "발사"출력
 # i = int(input("발사 카운트를 입력하여 주십시오. :"))
 # for num in range(i,0,-1):
 #     print(num, end=" ")
 # print("발사")
 
 # 구구단 만들기 - 사용자가 입력한 숫자의 구구단 출력
-# nember = int(input("출력할 구구단의 단수를 입력하여주세요. :"))
-# for num in range(1,10):
-#     print(f"{nember} * {num} = {nember * num}")
+nember = int(input("출력할 구구단의 단수를 입력하여주세요. :"))
+for num in range(1,10):
+    print(f"{nember} * {num} = {nember * num}")
 
 # a=[10,20,30]
 # print(sum(a)) #sum 은 합계를 구해준다.
@@ -116,14 +116,14 @@
 #  +힌트: 최대/최소값 : max(),min()
 
 #여러개의 숫자를 입력받아 리스트를 만든다.
-num_list = list(map(int,input("숫자를 입력:").split()))
-num = list(map(int,input("숫자를 입력하세요.: ").split()))
-print(type(num))
-max_num = max(num)
-print("가장 큰 값: " ,max_num)
-min_num = min(num)
-print("가장 작은 값: ",min_num)
-num.remove(max_num)
-num.remove(min_num)
-ave = sum(num)/len(num)
-print("나머지 값의 평균 : ",ave)
+# num_list = list(map(int,input("숫자를 입력:").split()))
+# num = list(map(int,input("숫자를 입력하세요.: ").split()))
+# print(type(num))
+# max_num = max(num)
+# print("가장 큰 값: " ,max_num)
+# min_num = min(num)
+# print("가장 작은 값: ",min_num)
+# num.remove(max_num)
+# num.remove(min_num)
+# ave = sum(num)/len(num)
+# print("나머지 값의 평균 : ",ave)
