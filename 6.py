@@ -63,13 +63,15 @@
 # else:
 #     print(f"{years}세의 요금은 무료입니다.")
 
-#1
+# 1
 # vending_machne = ['게토레이','레쓰비','생수','이프로']
 # 음료 = input("마시고 싶은 음료? :")
 # if 음료 in vending_machne:
 #     print(f"{음료} 드릴게요")
 # else : 
 #     print(f"{음료}는 지금 없네요.")
+
+2
 vending_machne = ['게토레이','게토레이','레쓰비','레쓰비','생수','생수','생수','이프로']
 user = input('소비자와 주인 가운데 입력하세요 :')
 
@@ -78,17 +80,19 @@ if user=="소비자":
     if 음료 in vending_machne:
         print(f"{음료}드릴게요.")
         vending_machne.remove(음료)
-    else :
-        print(f"{음료}가 없습니다.")
-else:
+    elif 음료 not in vending_machne :
+        print(f"{음료}는 없는 음료입니다.")
+    
+
+elif user =="주인":
     추가삭제 = input('추가 혹은 삭제 가운데 선택하여주세요.')    
     if 추가삭제 == "추가":
         추가음료=input("추가할 음료를 입력하여주세요.:")
-        index=vending_machne.index(추가음료)
-        vending_machne.insert(index,추가음료)
+        index=vending_machne.index(추가음료)  #해당 동일한 추가음료의 위치를 찾는다.
+        vending_machne.insert(index,추가음료)  #찾은 위치에 동일 해당음료를 넣는다.
     else:
         추가삭제 == "삭제"
-        삭제음료=input("삭제할 음료를 입력하여주세요.:")
+        삭제음료 = input("삭제할 음료를 입력하여주세요.:")
         if 삭제음료 in vending_machne:
             vending_machne.remove(삭제음료)
         else: print(f"{삭제음료}는 현재 없습니다.")
