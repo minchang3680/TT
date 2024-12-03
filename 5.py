@@ -15,9 +15,19 @@
 # print(b.strip())
 # print(b.split())
 # a = int(input("첫번쨰 세자리 수를 입력하시오 :")) #472
-# b = input("두번쨰 세자리 수를 입력하시오 :") #385
+# b( = input("두번쨰 세자리 수를 입력하시오 :") #385
 # print((a)*int(b[2]))
 # print((a)*int(b[1]))
 # print((a)*int(b[0]))
 # print((a)*int(b))
+# shop = ["a","c","d","e"]
+# shop.insert(1,"b")
+# print(shop)
+# shop = ["반팔","청바지","이어폰","키보드"]
+# shop.pop(1)
+# print(shop)
+# shop.pop()
+# print(shop)
+d = ["강남","강북","서","서","서"]
+print(d.index("서"))
 
