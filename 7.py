@@ -9,12 +9,12 @@
 #     print(lunch + "!!")
 # print('done')
 
-# num = 0
-# while num < 10:
-#     num = num +1
-#     if num %2 != 1:
-#         continue
-#     print(num)
+num = 0
+while num < 10:
+    num = num +1
+    if num %2 != 0:
+        continue
+    print(num)
 
 # while True:
 #     lunch = input("오늘 점심 후보 :")
@@ -75,23 +75,23 @@
 #     print()
 
 
-print('*** 자리배치도 ***')
-customer = int(input('고객수 입력: '))
-column = int(input('좌석열 수 입력: '))  #열수
+# print('*** 자리배치도 ***')
+# customer = int(input('고객수 입력: '))  #고객수
+# column = int(input('좌석열 수 입력: '))  #열수
 
-if customer % column == 0:
-    row = customer // column
-else:
-    row = (customer // column) + 1
-print(row)
+# if customer % column == 0:
+#     row = customer // column
+# else:
+#     row = (customer // column) + 1
+# print(row)
 
-for i in range(0, row):
-  for j in range(1, column + 1):
-    seat = i * column + j
-    if seat > customer:
-      break
-    print(seat, end=" ")
-  print()
+# for i in range(0, row):
+#   for j in range(1, column + 1):
+#     seat = i * column + j
+#     if seat > customer:
+#       break
+#     print(seat, end=" ")
+#   print()
 
 # # # 별찍기 - 아래와 같이 출력이 되도록 코드를 작성.
 # # #1 
