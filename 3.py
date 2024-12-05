@@ -27,6 +27,6 @@
 # print(years3)
 # print(f"올해는 {years3}년, {name}님의 나이는 {years3-years2}세 입니다.")
 
-shop = ["a","b","c","d","e"]
-print(shop.index("c")) #2
-print(shop.index("없는 값")) # 존재하지 않는 값 : value error
+# shop = ["a","b","c","d","e"]
+# print(shop.index("c")) #2
+# # print(shop.index("없는 값")) # 존재하지 않는 값 : value error
