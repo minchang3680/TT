@@ -5,8 +5,11 @@
 # # del t1[0]이런거 안된다.
 # #요소가 한개인 튜플 생성
 # t2 = (10)
+# print(t2)
 # t3 = (10, )
+# print(t3)
 # t4 = 10,20
+# print(t4)
 # print(type(t4))
 
 # # 셋 만들기
@@ -19,7 +22,7 @@
 
 # # 값 in 셋
 # print(1 in numbers1)
-# #값 not in 셋
+# # #값 not in 셋
 # print("c" in apple)
 
 # # 요소 추가
@@ -36,10 +39,10 @@
 #     a = set2.pop()
 #     print(a)
 
-# l1 = [1,2,3,4]
-# while len(l1) > 0:
-#     a = l1.pop()
-#     print(a)
+l1 = [1,2,3,4]
+while len(l1) > 0:
+    a = l1.pop()
+    print(a)
 
 # set3 = set("apple")
 # print(set3)
@@ -193,32 +196,32 @@
 
 # 딕셔너리 응용
 
-# 2차원 리스트
-d = [
-    [10,20],
-    [30,40],
-    [50.60]
-]
-print(d)
+# # 2차원 리스트
+# d = [
+#     [10,20],
+#     [30,40],
+#     [50.60]
+# ]
+# print(d)
 
-print(d[0][0])
-print(d[1][1])
-d.append([70,80])
-print(d)
+# print(d[0][0])
+# print(d[1][1])
+# d.append([70,80])
+# print(d)
 
-d[0][0] = 90
-print(d)
+# d[0][0] = 90
+# print(d)
 
-# d[1].pop(0)
-# del(d[1][1])
-print(d)
-print(len(d))
-print(len(d))
+# # d[1].pop(0)
+# # del(d[1][1])
+# print(d)
+# print(len(d))
+# print(len(d))
 
-for i in range(0,len(d)):
-    for j in range(0,len(d[i])):
-        print(d[i][j],end=" ")
-    print()
+# for i in range(0,len(d)):
+#     for j in range(0,len(d[i])):
+#         print(d[i][j],end=" ")
+#     print()
 
-for x, y in d:
-    print(x,y)
+# for x, y in d:
+#     print(x,y)
