@@ -38,33 +38,37 @@
 # value = list(filter(lambda x : x>3,map(lambda x:2*x,li)))
 # print(value)
 
-# arr = [1,2,3,100,99,98]
-# nembers = []
-# def solution():
-#     for num in arr:
-#         if num >= 50:
-#             if num % 2 == 0:
-#                 nembers.append(num/2) 
-#             else:
-#                 nembers.append(num*2) 
-         
-# solution()
+# def solution(arr):
+#     nembers = []
+#     for i in arr:
+#         if i >= 50 and i % 2 == 0:
+#             nembers.append(i/2)
+#         elif i < 50 and i % 2 == 1:
+#             nembers.append(i*2)
+#         else:
+#             nembers.append(i)
+#     return nembers
+# print(solution([1, 2, 3, 100, 99, 98]))   
+
+
 
 # #어떤 문자열 a가 다른 문자열 b안에 속하면 a를 b의 부분 문자열이라 합니다.
 
-# str1 = ("abc")
-# str2 = ("aabcc")
-# def solution():
-#     for str1 in str2:
-#         return 1
-#     else:
-#         return 0
-# print(solution)
+# def solution(str1, str2):
+#     answer = 0
+    
+#     return (int(str1 in str2))
 
-#문자열 myString이 주어집니다. myString을 문자 "x"를 기준으로 나눴을 때 나눠진 문자열 각각의 길이를 
+# print(solution("tbt","tbbttb"))
+
+# 문자열 myString이 주어집니다. myString을 문자 "x"를 기준으로 나눴을 때 나눠진 문자열 각각의 길이를 
 # 순서대로 저장한 배열을 return 하는 solution 함수를 완성해 주세요.
 
-# mystring = (int(input("입력")))
-# def solution():
-#     if 
+def solution(myString):
+    answer = []
+    myStringlist = myString.split("x")
+    for i in myStringlist:
+        answer.append(len(i))
+    return answer
+print(solution("oxooxoxxox"))
     
