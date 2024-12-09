@@ -18,7 +18,7 @@
 
 # 함수 시작
 
-# # 내장 함수
+# 내장 함수
 # a = "Strawberry Moon"
 # print(len(a)) 
 # print(a.count("r"))
@@ -36,7 +36,7 @@
 
 # def f(x):
 #     result = x**2 + x*2 + 1
-#     return result;
+#     return result
 # print(f(3))
 
 # def sayHi():
@@ -45,6 +45,16 @@
 #     print("Hi")
 
 # sayHi()
+
+# def sum_n(n):
+#     sum_v = 0
+#     for i in range(1,n+1):
+#         sum_v += i
+#     return sum_v
+# print(sum_n(10))
+
+# 함수 호출
+# 함수명()
 
 # x =10
 
@@ -97,12 +107,13 @@
 # v = [1,2,3,4,5]
 # v2 = times(v)
 # print(v2)
+# print(type(v2))
 
 
 # def times(l):
 #     l2 = [i*2 for i in l]
 #     return set(l2)
-# v2 = times({1,2,3,4,5})
+# v2 = times([1,2,3,4,5])
 # print(v2)
 
 # def sum_mul(a,b):
@@ -119,7 +130,7 @@
 # 3. add_drink : 음료수를 추가하는 함수
 # 4. remove_drink : 음료수를 제거하는 함수.
 
-vending_machne = ['게토레이','게토레이','레쓰비','레쓰비','생수','생수','생수','이프로']
+# vending_machne = ['게토레이','게토레이','레쓰비','레쓰비','생수','생수','생수','이프로']
 # user = input('소비자와 주인 가운데 입력하세요 :')
 
 # if user=="소비자":
@@ -145,7 +156,8 @@ vending_machne = ['게토레이','게토레이','레쓰비','레쓰비','생수'
 #         else: print(f"{삭제음료}는 현재 없습니다.")
 # print(vending_machne)
 # vending_machne = ['게토레이','게토레이','레쓰비','레쓰비','생수','생수','생수','이프로']
-# # 1. check_machine : 남은 음료수를 확인 할 수 있는 함수
+
+# 1. check_machine : 남은 음료수를 확인 할 수 있는 함수
 # def check_machine():
 #     print("남은 음료수 :",vending_machne)
 # check_machine()
@@ -175,7 +187,7 @@ vending_machne = ['게토레이','게토레이','레쓰비','레쓰비','생수'
 # pop = 스택에서 가장 위에 있는 정수를 빼고, 그 수를 출력한다. 만약 스택에 있는 정수가 없는 경우 -1을 출력한다.
 # size: 스택에 들어있는 정수의 개수를 출력한다.
 # empty: 스택이 비어있으면 1, 아니면 0을 출력한다.
-# top: 스택의 가장 위에 있는 정수를 출력한다. 만약 스택에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+# top: 스택의 가장 위에 있는 정수를 출력한다. 만약 스택에 들어있는 정수가 없는 경우에는 -1을 출력한다. 
 
 # import sys
 # n = int(sys.stdin.readline())
@@ -245,6 +257,16 @@ vending_machne = ['게토레이','게토레이','레쓰비','레쓰비','생수'
 
 #실습5) 1~30까지의 자연수 중 배수와 배수의 개수를 계산하는 함수를 정의 하시오.
 
+# def get_times(n):
+#     global count
+#     count = 0
+#     for i in range(1,31):
+#         if i % n == 0:
+#             print(i, end = " ")
+#             count += 1
+#     print(f'\n{n}의 배수의 개수: {count}')
+
+# get_times(5)
 
     
 
