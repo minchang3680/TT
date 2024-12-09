@@ -8,6 +8,7 @@
 #         answer.append(-1)
 #     answer.sort()
 #     return answer
+# print([5, 9, 7, 10])
 
 # print(solution([2, 36, 1, 3],1))
 
@@ -95,14 +96,62 @@
 #                [5, 10, 1, 3],
 #                [["may", "kein", "kain", "radi"],["may", "kein", "brin", "deny"], ["kon", "kain", "may", "coni"]]))
 
-# 문제 6
-# 아 그 나누는 기준 정해서 하는 그거.. x하던거.. = .split(나누는 기준.)
-def solution(t, p):
-    answer = []
-    list = t.split(p)
-    print(list)
-    # for i in list:
-    #     answer.appened(lne(i))
+# # 문제 6
+# # 아 그 나누는 기준 정해서 하는 그거.. x하던거.. = .split(나누는 기준.)
+# def solution(t, p):
+#     answer = []
+#     list = t.split()
+#     for i in range(p):
+    
+
         
+#     return answer
+# print(solution("3141592","271"))
+
+# 콜라츠 수열 문제.
+# # 단 재귀 함수로 풀어야함.
+# def solution(n):
+#     answer = []
+#     if x == 1:
+#         return
+#     elif x % 2 == 0:
+#         cpllat(x/2)
+#     else:
+#         collat(x*3+1)
+# collat(n)
+# print(solution())
+
+# # 특이한 정렬,
+# def solution(numlist, n):
+#     answer = []
+#     d = {}
+#     for i in numlist:
+#         d[i] = abs(i-d)
+#     d1 = sorted(d.items(), key = lambda item:(item[i],-item[0]))
+#     print(d.items())
+#     print(d1)
+
+# for i in d1:
+#     answer.append()
+
+#     return answer
+
+# # 옹알이
+# def solution(babbling):
+#     answer = 0
+#     can = ["aya","ye","woo",]
+
+# 하노이의 탑.
+# 2개 일떄,
+def solution(n):
+    answer = []
+    def hanoi(n,f,t,v):
+        if n == 1:
+            answer.append([f,t])  # 1 = f , 2 = v , 3 = t
+        else:
+            hanoi(n-1,f,v,t)
+            answer.append([f,t])
+            hanoi(n-1,v,t,f)
+    hanoi(n,1,3,2)
     return answer
-print(solution("3141592","271"))
+print(solution(2))
