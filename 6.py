@@ -98,12 +98,51 @@
 #         else: print(f"{삭제음료}는 현재 없습니다.")
 # print(vending_machne)
 
-def print_gugudan(dan):
-    for i in range(1,10):
-        print(dan, 'x', i, '=', (dan * i))
-print_gugudan(5)
+# def print_gugudan(dan):
+#     for i in range(1,10):
+#         print(dan, 'x', i, '=', (dan * i))
+# print_gugudan(5)
       
+# def square(x):
+#     return x*x
 
+# val = square(6)
+# print(val)
+
+# def add(x,y):
+#     total = x + y
+#     return total
+# result = add(x=2,y=5)
+# print(result)
+
+# print(abs(-10))
+
+# def myabs(x):
+#     if x < 0:
+#         return -x
+#     else :
+#         return x
+# print(myabs(10))
+
+# def sum_n(n):
+#     sum_v = 0
+#     for i in range(1,n+1):
+#         sum_v += i
+#     return sum_v
+# print(sum_n(10))
+
+# def sum_n2(n):
+#     sum_v = (n*(n+1)) // 2
+#     return sum_v
+
+# print(sum_n2(10)) 
+
+# def times(a):
+#     a2 = [i*3 for i in a]
+#     return a2
+# v =[1,2,3,4,5]
+# v2 = times(v)
+# print(v2)
 
 
     

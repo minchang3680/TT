@@ -9,12 +9,12 @@
 #     print(lunch + "!!")
 # print('done')
 
-num = 0
-while num < 10:
-    num = num +1
-    if num %2 != 0:
-        continue
-    print(num)
+# num = 0
+# while num < 10:
+#     num = num +1
+#     if num %2 != 0:
+#         continue
+    # print(num)
 
 # while True:
 #     lunch = input("오늘 점심 후보 :")
@@ -127,3 +127,10 @@ while num < 10:
 # num.remove(min_num)
 # ave = sum(num)/len(num)
 # print("나머지 값의 평균 : ",ave)
+
+# def get_price():
+#     price = 4000 * quantity
+#     return price
+# quantity = 2
+# unit_price = get_price()
+# print(f"{quantity}개에 {unit_price}원입니다.")

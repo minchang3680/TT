@@ -29,19 +29,19 @@
 # numbers1.add(6)
 # print(numbers1)
 
-# set1 = {1,2,3}
-# print(set1)
-# set2 = set({1,2,3,3})
-# print(set2)
-# set2.add(4)
-# print(set2)
-# while len(set2) > 0:
-#     a = set2.pop()
-#     print(a)
+set1 = {1,2,3}
+print(set1)
+set2 = set({1,2,3,3})
+print(set2)
+set2.add(4)
+print(set2)
+while len(set2) > 0:
+    a = set2.pop()
+    print(a)
 
 l1 = [1,2,3,4]
 while len(l1) > 0:
-    a = l1.pop()
+    a = l1.pop()  #pop되는 것은 랜덤인가?
     print(a)
 
 # set3 = set("apple")

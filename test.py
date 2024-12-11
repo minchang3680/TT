@@ -1,26 +1,20 @@
-# cabinet = {3:"유재석", 100:"김태호"}
-# print(cabinet[3])
-# print(cabinet[100])
-# print(cabinet.get(3))
-# print(cabinet.get(5))
-# print(cabinet.get(5, "사용가능"))
-# print(3 in cabinet)
-# print(5 in cabinet)
+class Movie:
+    count = 0
+    
+    def __init__(self, title, audience):
+        self.__title = title
+        self.__audience = audience
+        Movie.count += 1
 
-cabinet = {"A-3":"유재석","B-100":"김태호"}
-# print(cabinet["A-3"])
-# print(cabinet["B-100"])
+    def get_title(self):
+        return self.__title
+    
+    # def set_title(self,title):
+    #     self.__title = title
 
-print(cabinet)
-cabinet["A-3"] = "김종국"
-cabinet["C-20"] = "조세호"
-print(cabinet)
-
-del cabinet["A-3"]
-print(cabinet)
-
-print(cabinet.keys())
-
-print(cabinet.values())
-
-print(cabinet.items())
+movie1 = Movie("파묘",100)
+# print(movie1.__title)
+print(movie1.get_title())
+movie1.__title = "오겜"  #__로 되어있다면, 외부에서 접근이 안된다.(중요)
+print(movie1.get_title())
+print(movie1.__title)
