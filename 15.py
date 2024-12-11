@@ -6,17 +6,17 @@
 import datetime
 import calendar
 
-# days = ['월','화','수','목','금','토','일']
+days = ['월','화','수','목','금','토','일']
 
-# weekday = datetime.date.today().weekday()
-# print(weekday)
-# print('오늘은' + days[weekday]+ '요일')
+weekday = datetime.date.today().weekday()
+print(weekday)
+print('오늘은' + days[weekday]+ '요일')
 
-# weekday = datetime.date(2024,12,25).weekday()
-# print(weekday)
-# print('크리스마스는 ' + days[weekday] + '요일')
+weekday = datetime.date(2024,12,25).weekday()
+print(weekday)
+print('크리스마스는 ' + days[weekday] + '요일')
 
-# 날짜로 요일 알아내기 - 함수로 정의
+# # 날짜로 요일 알아내기 - 함수로 정의
 # def get_weekday(yyyy,mm,dd):
 #     days = ['월','화','수','목','금','토','일']
 #     weekday = datetime.date(yyyy,mm,dd).weekday()
@@ -24,7 +24,7 @@ import calendar
 
 # get_weekday(2024,12,25)
 
-import time
+# import time
 
 # print(time.time())
 # time.sleep(2)
@@ -49,27 +49,24 @@ import time
 # day = time.time()/24*60*60  # 특정 기준으로부터 몇 일이 지났는가
 # print(day)
 
-import time
+# import time
 
-def check_time(func):
-    start = time.time()
-    
-    func()
+# def check_time(func):
+#     start = time.time()
+#     func()
+#     end = time.time()
+#     print("수행시간 : " + str(end - start) + "초")
 
-    end = time.time()
-    print("수행시간 : " + (end - start) + "초")
+# def a():
+#     for i in range(10):
+#         print(i)
+#         time.sleep(1)
 
-def a():
-    for i in range(10):
-        print(i)
-        time.sleep(1)
+# def b():
+#     for i in range(100):
+#         print(i)
+#         time.sleep(0.5)
 
-def b():
-    for i in range(100):
-        print(i)
-        time.sleep(0.5)
-
-# check_time(a)
-
-check_time(b)
+# # check_time(a)
+# check_time(b)
 

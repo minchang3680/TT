@@ -156,45 +156,45 @@
 # 1~45까지의 수 중 랜덤으로 6개의 숫자를 뽑는다 .
 # 6개의 숫자 중 중복되는 숫자가 없도록 한다.
 
-import random
+# import random
 
-com = []  # 선택된 숫자들을 저장할 리스트
+# com = []  # 선택된 숫자들을 저장할 리스트
 
-# 6개의 고유한 숫자를 선택할 때까지 반복
-while len(com) < 6:
-    num = random.randint(1, 45)  # 1부터 45까지의 랜덤 숫자 생성
-    if num not in com:  # 숫자가 이미 선택된 숫자 리스트에 없으면
-        com.append(num)  # 리스트에 추가
+# # 6개의 고유한 숫자를 선택할 때까지 반복
+# while len(com) < 6:
+#     num = random.randint(1, 45)  # 1부터 45까지의 랜덤 숫자 생성
+#     if num not in com:  # 숫자가 이미 선택된 숫자 리스트에 없으면
+#         com.append(num)  # 리스트에 추가
         
 
-# 6개의 고유한 숫자 출력
-print(com)
-
-import datetime
-
-now = datetime.datetime.today()
-print(now)
-print(now.year)
-
-print(f"{now.hour}시 {now.minute}분 {now.second}초")
-
-# 나이가 100세 되는 해의 연도 계산하기 프로그램.
+# # 6개의 고유한 숫자 출력
+# print(com)
 
 # import datetime
 
-# today = datetime.date.today()
-# print(today.year)
+# now = datetime.datetime.today()
+# print(now)
+# print(now.year)
+
+# print(f"{now.hour}시 {now.minute}분 {now.second}초")
+
+# 나이가 100세 되는 해의 연도 계산하기 프로그램.
+
+import datetime
+
+today = datetime.date.today()
+print(today.year)
 
 
-# # 지나온 날짜 계산하기
+# 지나온 날짜 계산하기
 
-# print("지금까지 몇일?")
-# first_day = datetime.date(2024,11,25)
-# print(first_day)
+print("지금까지 몇일?")
+first_day = datetime.date(2024,11,25)
+print(first_day)
 
-# today = datetime.date.today()
-# print(today)
+today = datetime.date.today()
+print(today)
 
-# passed_time = today - first_day
-# print(passed_time)
-# print(f'개강 이후 {passed_time.days}일 지났습니다.')
+passed_time = today - first_day
+print(passed_time)
+print(f'개강 이후 {passed_time.days}일 지났습니다.')
