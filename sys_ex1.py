@@ -46,51 +46,46 @@ import sys
 
 import os
 
-os.chdir("C:\\Users\\minch\\TT")  # 디렉터리 경로
-dir = os.popen('dir') # dir 명령으로 열기
-print(dir.read()) # 디렉터리 보기(읽기)
+# os.chdir("C:\\Users\\minch\\TT")  # 디렉터리 경로
+# dir = os.popen('dir') # dir 명령으로 열기
+# print(dir.read()) # 디렉터리 보기(읽기)
 
-print(os.listdir()) # 파일을 리스트에 저장.
-# 경로에 이스케이프 문자(\)를 각각 하나씩 넣어줘야 제대로 인식한다. C:\Users\minch\TT의 경우 불가.
+# print(os.listdir()) # 파일을 리스트에 저장.
+# # 경로에 이스케이프 문자(\)를 각각 하나씩 넣어줘야 제대로 인식한다. C:\Users\minch\TT의 경우 불가.
 
 # 영타 연습 프로그램
 
-# import random
-# import time
+import random
+import time
+import os
 
-# n = 1
+n = 1
 # word = ['sky', 'earth', 'moon', 'flower', 'tree', 'apple',
 #         'grape', 'garlic', 'onion', 'potato']
 
-# input("*[타자게임] 준비되면 엔터*")
-# start = time.time()
+# if os.path.exists(): # 파일이 있는지 확인.
+#     with open("word.txt","r") as f:
+#         word = f.read().split()
+# else :
+#     word = ['sky', 'earth', 'moon', 'flower', 'tree', 'apple',
+#         'grape', 'garlic', 'onion', 'potato']
 
-# while n < 11:
-#     print("문제",n)
-#     question = random.choice(word)   # choice는 중복이 가능함 
-#     print(question)
-#     user = input()
-#     if question == user:
-#         print("통과")
-#         n += 1
-#     else:
-#         print("오타! 다시 도전!")
 
-# end = time.time()
-# et = end - start
-# print(f'타자시간: {et:.2f}초')  # 2f가 소수점 몇번쨰 자리 까지 확인하는지.
+input("*[타자게임] 준비되면 엔터*")
+start = time.time()
+
+while n < 11:
+    print("문제",n)
+    question = random.choice(word)   # choice는 중복이 가능함 
+    print(question)
+    user = input()
+    if question == user:
+        print("통과")
+        n += 1
+    else:
+        print("오타! 다시 도전!")
+
+end = time.time()
+et = end - start
+print(f'타자시간: {et:.2f}초')  # 2f가 소수점 몇번쨰 자리 까지 확인하는지.
 # .?f로 표기 해야된다.
-
-
-# import random
-# import time
-
-# start = time.time()
-# word = []
-# n = 1
-
-# while n < 11:
-#     print(random.choice(word))
-
-#패키지
-    

@@ -20,15 +20,41 @@
 
 # f = open("text.txt","a")  
 # f.write('Hello World22\n')
+# f.write('bye\n')
 # f.close()  # 종료.
 
-f2 = open("text.txt")  # text.txt를 열고, ()안에 파일명, 뒤에 r(읽기)외에 다른것을 넣으면 오류가 난다.
-print(f2.read())  # text.txt라는 파일을 끝까지 읽다. 숫자를 넣으면 그 인덱스 까지 읽는다
-f2.close()# 종료  # 이 경우 5까지 읽어서 Hello World!! 에서 Hello 5까지 읽고 출력한 것이다.
+# f2 = open("text.txt")  # text.txt를 열고, ()안에 파일명, 뒤에 r(읽기)외에 다른것을 넣으면 오류가 난다.
+# print(f2.read())  # text.txt라는 파일을 끝까지 읽다. 숫자를 넣으면 그 인덱스 까지 읽는다
+# f2.close()# 종료  # 이 경우 5까지 읽어서 Hello World!! 에서 Hello 5까지 읽고 출력한 것이다.
 # f = open("text.txt","a") # a는 추가.
 # 근데 추가한게 유지는 안되네..
-f2 = open("text.txt")
-print(f2.readline())  
-print(f2.readline(), end ="")  
-print(f2.readline(), end ="")  
-f2.close()
+# f2 = open("text.txt")
+# print(f2.readlines())  
+# print(f2.readlines(), end ="")  
+# print(f2.readlines(), end ="")  
+# f2.close()
+# f4 = open("text.txt")
+# print(f4.readlines())
+# f4.close()
+
+# f5 = open("text.txt", "r+")
+# print(f5.read())
+# print(f6.tell())
+# f5.seek(4)  # 4번 자리로 돌아가라.
+# print(f5.write("8"))  # 그래서 4번자리에 8이 입력되어 들어감. ex) Hell8 World!!
+# f5.close()
+
+# f6 = open("text.txt","r+")
+# str6 = f6.read()
+# print(f6.tell())
+# f6.seek(str6.find('5')) # 5가 있는 위치를 찾아서 돌아간다,
+# print(f6.write("8")) # 그리고 그 위치에 8을 집어 넣는다. before) 12345678 -> after) 12348678
+# f6.close()
+
+# with open("text.txt","r+") as f7:
+#     str6 = f7.read()
+#     print(f7.tell())
+#     f7.seek(str6.find('3')) # 5가 있는 위치를 찾아서 돌아간다,
+#     print(f7.write("8")) # 그리고 그 위치에 8을 집어 넣는다. before) 12345678 -> after) 12348678
+
+
