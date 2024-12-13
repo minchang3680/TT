@@ -58,23 +58,23 @@ member.txt 에서 한줄씩 "이름"과 "비번"을 검사하여 로그인 성�
 # 회원 찾기 시에 한번에 찾도록 업그레이드.
 # 딕셔너리 활용.
 '''
-dictUser = {}
+# dictUser = {}
 
-with open("./output/member.txt", 'r',encoding = "utf-8") as f:
-    for line in f:
-        n, p = line.split()
-        dictUser[n] = p
+# with open("./output/member.txt", 'r',encoding = "utf-8") as f:
+#     for line in f:
+#         n, p = line.split()
+#         dictUser[n] = p
 
-print(dictUser)
+# print(dictUser)
 
-# for i in range(100) :
-name = input("이름을 입력하세요: ")
-pw = input("비밀번호를 입력하세요: ")
+# # for i in range(100) :
+# name = input("이름을 입력하세요: ")
+# pw = input("비밀번호를 입력하세요: ")
 
-if pw == dictUser.get(name):  
-    print("로그인 성공!")
-else:
-    print("로그인 실패!")
+# if pw == dictUser.get(name):  
+#     print("로그인 성공!")
+# else:
+#     print("로그인 실패!")
 
 '''    
 if pw == dictUser.get(name):  
@@ -89,42 +89,32 @@ if pw == dictUser.get(name):
 4. member.txt에 이미 존재하는 사람이 로그인 성공시 전화번호 수정하기.
 '''
 
-# dict_users = {}
+dict_users = {}
+dict_phone={}
+with open("./output/member.txt","r",encoding="utf-8") as f:
+    for i in f:
+        n, p = i.split()
+        dict_users[n] = p
+with open("./output/member_tel.txt","r",encoding="utf-8") as f:
+    for i in f:
+        n, p = i.split()
+        dict_phone[n] = p
 
-# with open("./output/member.txt","r",encoding="utf-8") as f:
-#     for i in f:
-#         n, p = i.split()
-#         dict_users[n] = p
 
-# name = input("이름을 입력하세요. : ")
-# pw = input("비밀번호를 입력하세요. : ")
+name = input("이름을 입력하세요. : ")
+pw = input("비밀번호를 입력하세요. : ")
 
-# if pw == dict_users.get(name):
-#     print("로그인 성공")
-#     with open("./output/member.txt","a",encoding="utf-8") as f:
-#         number = input("전화번호를 입력하세요. : ")
-#         f.write(f"{name}\t{pw}\t{number}\n")
-# else:
-#     print("로그인 실패")
+if pw == dict_users.get(name):
+    print("로그인 성공")
+
+    with open("./output/member_tel.txt","w",encoding="utf-8") as f:
+        number = input("전화번호를 입력하세요. : ")
+        dict_phone[name]=number
+        for name,phone in dict_phone.items():
+            f.write(f"{name}\t{phone}\n")
+     
+else:
+    print("로그인 실패")
 
 ''' 매번 초기화 '''
-
-# dict_users = {}
-
-# with open("./output/member.txt","r",encoding="utf-8") as f:
-#     for i in f:
-#         n, p = i.split()
-#         dict_users[n] = p
-
-# name = input("이름을 입력하세요. : ")
-# pw = input("비밀번호를 입력하세요. : ")
-
-# if pw == dict_users.get(name):
-#     print("로그인 성공")
-#     number = input("전화번호를 입력하세요. : ")
-#     with open("./output/member.txt","a",encoding="utf-8") as f:
-#         f.write(f"{name}\t{pw}\t{number}\n")
-# else:
-#     print("로그인 실패")
-
 
